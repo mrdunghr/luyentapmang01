@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+</body>
+<script>
+  let inP = parseInt(prompt('Nhập vào độ dài mảng'));
+  // let array = new Array(inP);
+  let array = [];
+  let result = ''
+  for (let i = 0; i < inP; i++) {
+    let inP = prompt('Phần tử' + i);
+    array.push(inP)
+  }
+  document.write(array + '<br>')
+  for (let i = 0; i <= array.length; i++) {
+    if (array[i] === 'V') {
+      result = ('Thấy V _ V is in the array')
+      break;
+    } else {
+      result = ('Không thấy V _ V is not in the array')
+    }
+  }
+  document.write(result)
+</script>
+</html>

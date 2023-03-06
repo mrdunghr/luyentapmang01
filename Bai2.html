@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+</body>
+<script>
+  let array = [4, 5, 7, 24, 234, 3, 345, 23, 56, 35];
+  let sLn = 1;
+  let viTri = 0;
+  for (let i = 0; i <= array.length; i++){
+    if (array[i] > sLn){
+      sLn = array[i]
+      viTri += 1
+    }
+  }
+  console.log('số lớn nhất có trong mảng là = '+ sLn)
+  console.log('Vị trí của nó là = ' + viTri)
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+</body>
+<script>
+  let str = '-2. b. -1. -5. c'
+  let strToArray = str.split('. ');
+  let newArray = []
+  let soNA = 0
+  console.log(strToArray)
+  for (let i = 0; i < strToArray.length; i++){
+    if (strToArray[i] % 1 == 0 && strToArray[i] < 0){
+      newArray.push(strToArray[i])
+      soNA = soNA + 1
+    }
+  }
+  console.log(soNA + ' số nguyên âm trong mảng này')
+</script>
+</html>
